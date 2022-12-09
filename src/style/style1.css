@@ -1,0 +1,55 @@
+.forms{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left{
+    min-width: 570px;
+    max-width: 570px;
+    min-height: 590px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing:content-box;
+}
+.row{
+    display: flex;
+    width: 100%;
+    box-sizing:border-box;
+    justify-content: flex-start;
+}
+.row input{
+    width: 50%;
+}
+.name{
+    height: 22px;
+    margin-bottom: 7px;
+}
+.name > label{
+    width: 50%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+label[for="firstname"]{
+    margin: 0px 7px 0px 43px;
+}
+
+.title{
+    margin:35px 0 20px 36px;
+}
+input[name=firstname]{
+    margin: 0 7px 0 34px;
+    height: 38px;
+}
+
+input[name=lastname]{
+    margin: 0 34px 0 0px;
+    height: 38px;
+}
+[type="email"]{
+    width: 100%;
+}

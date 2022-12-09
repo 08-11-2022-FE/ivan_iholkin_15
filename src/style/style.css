@@ -1,0 +1,117 @@
+
+.forms{
+    display: flex;
+    gap: 30px;
+}
+.forms-item{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 570px;
+    min-width: 570px;
+    height: 590px;
+    /* display: grid;
+    grid-template-areas: "h1 h1 h1 h1"
+                        "firstname firstname lastname lastname" 
+                        "inputfn inputfn inputln inputln"
+                        " email email email email"
+                        " inemail inemail inemail inemail"
+                        "span span span span"
+                        "male male female female " 
+                        "country country city city"
+                        "select select inputcity inputcity"
+                        "submit submit submit submit"
+                        "p p p p"
+                        "footp footp footpa footpa";
+  row-gap: 7px;
+  column-gap: 12px;    
+  box-sizing: border-box; */
+  padding: 35px 34px 16px 36px;                
+}
+h1{
+    font-weight: 500;
+    font-size: 24px; 
+    margin: 35px 0px 20px 36px;
+    /* grid-area: h1; */
+    width: 100%;
+}
+.left label[for="firstname"]{
+    /* grid-area: firstname; */
+    width: 50%;
+}
+
+.left label[for="lastname"]{
+    /* grid-area: lastname; */
+    width: 50%;
+}
+
+.left input[name=firstname]{
+    /* grid-area: inputfn; */
+    width: 50%;
+}
+
+
+.left input[name=lastname]{
+    /* grid-area: inputln; */
+    width: 50%;
+}
+
+.left label[for=email]{
+    grid-area: email;
+    width: 100%;
+}
+
+.left input[name=email]{
+    grid-area: inemail;
+    width: 100%;
+}
+
+.warningtext{
+    /* grid-area: span; */
+    width: 100%;
+    /* display: block; */
+}
+.left input[id="male"]{
+    /* grid-area: male; */
+    width: 50%;
+}
+.left label[for=male]{
+    grid-area: male;
+}
+
+.left input[id="female"]{
+    grid-area: female;
+}
+.left label[for=female]{
+    grid-area: female;
+}
+
+label[id="country"]{
+    grid-area: country;
+}
+.left select[id="country"]{
+    grid-area: select;
+}
+
+
+.left label[for=city]{
+    grid-area: city;
+}
+
+.left input[name=city]{
+    grid-area: inputcity;
+}
+
+.left button[type=submit]{
+    grid-area: submit;
+}
+
+.p{
+    grid-area: p;
+    align-self: center;
+}
+.footp{
+    grid-area: footp;
+}
+.footpa{
+    grid-area: footpa;
+}

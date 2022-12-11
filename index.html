@@ -10,62 +10,98 @@
 </head>
 <body>
     <section class="forms">
-        <form class="forms-item left" action="">
-            <div class="row title"><h1>Create an Account</h1></div>
-            <div class="row name"><label for="firstname">First Name</label><label for="lastname">Last Name</label></div>
-            <div class="row">
-                <input type="text" name="firstname">
-                <input type="text" name="lastname">
+        <form class="form left" >
+            <div>
+                <h2>Create an Account</h2>
             </div>
-            <div class="row email"><label for="email">E-mail</label></div>
-            <div class="row email"><input type="email" name="email" id=""></div>
-            <div class="row"><p class="warningtext">We'll never share your email with anyone else.</p></div>
-            <div class="row"><input type="radio" name="sex" id="male">
+            <div class="usersname">
+                <div class="usersname-name">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname">
+                </div>
+                <div class="usersname-lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname">
+                </div>
+            </div>
+            <div class="mail">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="">
+            </div>
+            <div>
+                <input type="radio" name="sex" id="male">
                 <label for="male">Male</label>
                 <input type="radio" name="sex" id="female">
                 <label for="female">Female</label>
             </div>
-            <div class="row">
-                <label for="counry" id="country">Country</label>
-                <label for="city">City</label>
+            <div class="location">
+                <div class="location-country">
+                    <label for="counry">Country</label>
+                    <select name="country" id="country">
+                        <option value="ukraine">Ukraine</option>
+                        <option value="portugal">Portugal</option>
+                    </select>
+                </div>           
+                <div class="location-city">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>   
             </div>
-            <div class="row">
-                <select name="country" id="country">
-                    <option value="ukraine">Ukraine</option>
-                    <option value="portugal">Portugal</option>
-                </select>
-                <input type="text" name="city" id="city">
-            </div>
-            <div class="row">
+            <div>
                 <button type="submit">Sign Up</button>
             </div>
-            <div class="row">
-                <p class="p">By clicking the 'Sign Up' button, you confirm that you accept our <a href="" target="_blank">Terms of Use</a> and <a href="" target="_blank">Privacy Policy</a></p>
-            </div>
-            <div class="row"> <p class="footp">Have an account?<a href="">Log in</a></p></div>
+            <div>
+                <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="" target="_blank">Terms of Use</a> and <a href="" target="_blank">Privacy Policy</a></p></div>
+            <div class="lasttext">
+                <p>Have an account?</p><p><a href="">Log in</a></p>
+            </div>   
         </form>
-        <form class="forms-item right" action="">
-            <h1>Create an Account</h1>
-            <label for="firstname">First Name</label>
-            <input type="text" name="firstname">
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="">
-            <input type="radio" name="sex" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="sex" id="female">
-            <label for="female">Female</label>
-            <label for="counry">Country</label>
-            <select name="country" id="country">
-                <option value="ukraine">Ukraine</option>
-                <option value="portugal">Portugal</option>
-            </select>
-            <label for="city">City</label>
-            <input type="text" name="city" id="city">
-            <button type="submit">Sign Up</button>
-            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="" target="_blank">Terms of Use</a> and <a href="" target="_blank">Privacy Policy</a></p>
-            <p>Have an account?</p><p><a href="">Log in</a></p>
+        <form class="form right" action="">
+            <div>
+                <h2>Profile</h2>
+            </div>
+            <div>
+                <img src="" alt="">
+                <input type="image" name="downloadimage">
+                <label for="downloadimage">Up to 1 MB (300x300 px)</label>
+                <button type="reset"></button>
+            </div>
+            <div class="usersname">
+                <div class="rname">
+                    <label for="rname">First Name</label>
+                    <input type="text" name="rname">
+                </div>
+                <div class="rmail">
+                    <label for="rmail">E-mail</label>
+                    <input type="email" name="rmail">
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-country">
+                    <label for="counry">Country</label>
+                    <select name="country" id="country">
+                        <option value="ukraine">Ukraine</option>
+                        <option value="portugal">Portugal</option>
+                    </select>
+                </div>           
+                <div class="location-city">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+            </div>
+            <div class="number">
+                <div class="zip">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip">
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone">
+                </div>
+            </div>
+            <div>
+                <button type="submit">Update</button>
+            </div>
         </form>
     </section>
 </body>

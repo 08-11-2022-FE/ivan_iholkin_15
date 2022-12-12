@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style/style1.css">
 </head>
 <body>
     <section class="forms">
         <form class="form left" >
-            <div>
+            <div class="tittle">
                 <h2>Create an Account</h2>
             </div>
             <div class="usersname">
@@ -28,7 +29,7 @@
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="">
             </div>
-            <div>
+            <div class="sex">
                 <input type="radio" name="sex" id="male">
                 <label for="male">Male</label>
                 <input type="radio" name="sex" id="female">
@@ -47,24 +48,31 @@
                     <input type="text" name="city" id="city">
                 </div>   
             </div>
-            <div>
-                <button type="submit">Sign Up</button>
+            <div class="button-left">
+                <button class="button button-long" type="submit">Sign Up</button>
             </div>
-            <div>
+            <div class="hr"></div>
+            <div class="text">
                 <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="" target="_blank">Terms of Use</a> and <a href="" target="_blank">Privacy Policy</a></p></div>
             <div class="lasttext">
                 <p>Have an account?</p><p><a href="">Log in</a></p>
             </div>   
         </form>
         <form class="form right" action="">
-            <div>
+            <div class="tittle">
                 <h2>Profile</h2>
             </div>
-            <div>
-                <img src="" alt="">
-                <input type="image" name="downloadimage">
-                <label for="downloadimage">Up to 1 MB (300x300 px)</label>
-                <button type="reset"></button>
+            <div class="image">
+                <div class="image-load">
+                    <img src="./src/images/Image.png" alt="">
+                    <div class="image-input">
+                        <input type="image" name="downloadimage" alt="">
+                        <label for="downloadimage">Up to 1 MB (300x300 px)</label>
+                    </div>
+                </div>
+                <div>
+                    <button type="reset"></button>
+                </div>
             </div>
             <div class="usersname">
                 <div class="rname">
@@ -99,8 +107,8 @@
                     <input type="tel" name="phone">
                 </div>
             </div>
-            <div>
-                <button type="submit">Update</button>
+            <div class="button-right">
+                <button class="button button-short" type="submit">Update</button>
             </div>
         </form>
     </section>

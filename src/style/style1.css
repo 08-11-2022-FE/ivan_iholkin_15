@@ -176,3 +176,12 @@ button[type="reset"]:hover{
     height: 1px;
     background:  #E4E4E4;;
 }
+
+@media only screen and (max-width: 768px) {
+    .forms{flex-direction: column;}
+    .form{width: 100%;}
+    .usersname, .location, .number, .sex, .image{
+        flex-direction: column;
+        width: 100%;
+    }
+  }

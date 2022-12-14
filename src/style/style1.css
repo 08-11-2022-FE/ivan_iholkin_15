@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background: #E5E5E5;
+}
+
+
+.forms{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 55px 135px;
+    background: #F7F7F7;
+    max-width: 1440px;
+    /* max-height: 590px; */
+}
+
+
+.form{
+    display: flex;
+    width: 50%;
+    min-width: 570px;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 0 34px;
+}
+
+.usersname, .location, .number, .sex, .image{
+    display: flex;
+    gap: 12px;
+}
+
+.usersname-name, .usersname-lastname, .location-city, .location-country, .mail, .rname, .rmail, .zip, .phone{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.usersname-name, .usersname-lastname, .location-city, .location-country, .rname, .rmail, .zip, .phone, .image-load{
+    width: 50%;
+ 
+}
+
+input:focus{
+    border: 1px solid #007BFF;; 
+}
+
+
+.lasttext{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;  
+    margin-bottom: 16px;
+}
+
+.text{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+    margin-bottom: 16px;
+    width: 410px;
+    margin: 0 auto;
+}
+
+.text a{
+    text-decoration: none;
+    color:#007BFF;
+}
+
+.lasttext a{
+    text-decoration: none;
+    color:#007BFF;
+}
+
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+}
+
+.tittle-h2{
+    padding-top: 27px;
+}
+label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+input, select{
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 38px;
+    box-sizing:border-box;
+}
+
+.button{
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px; 
+    color: #FFFFFF;
+}
+
+.button-long{
+    width: 100%;
+    height: 38px;
+}
+.button-short{
+    width: 25%;
+    height: 38px;
+}
+
+.button-right{
+    padding-bottom: 104px;
+}
+.sex{
+  align-items:center;
+}
+.tittle{
+    padding-top: 35px ;
+}
+
+.image-load{
+    display: flex;
+    gap: 20px;
+    justify-content:space-between ;
+}
+
+
+.image-input{
+    display: flex;
+    flex-direction: column;
+    gap:9px;
+    width: 100%;   
+}
+
+.image-input label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+.image-input input{
+    background-image: url(../images/Photo\ Camera.svg);
+    background-repeat: no-repeat;
+    background-position: 95% ;
+    background-size: 16px 16px;
+    transition:  background-position 1s;
+}
+
+.image-input input:hover{
+   background-position :50%;
+}
+
+button[type="reset"]{
+    width: 38px;
+    height: 38px;
+    background-image:url(../images/Text\ +\ Right\ Icon.svg);
+    background-position:center;
+    background-size:contain;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    border-radius : 6px;
+
+}
+button[type="reset"]:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background:  #E4E4E4;;
+}
+
+@media only screen and (max-width: 768px) {
+    .forms{flex-direction: column;
+            margin: 0;
+            padding: 0;}
+    .form{width: 100%;}
+    .usersname, .location, .number, .sex, .image{
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+
+  .select {
+    height: 38px;
+    appearance: none;
+    background: url('../images/select.svg') no-repeat right 14px bottom 50%;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+}
+
+option[disabled]{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+input[type="radio"] {
+    display: none;
+}
+.sex-item{
+  display: flex;  
+  gap: 8px;
+  cursor: pointer;
+}
+
+.custom-radio{
+    background: white;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #E4E4E4;
+    position: relative;
+}
+.custom-radio::after{
+    content: "";
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color:white;
+    position: absolute;
+    left:25%;
+    top: 25%;
+}
+
+
+input[type="radio"]:checked + .custom-radio {
+    background: #007BFF;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/style1.css">
+</head>
+<body>
+    <section class="forms">
+        <form class="form left" >
+            <div class="tittle">
+                <h2 class="tittle-h2">Create an Account</h2>
+            </div>
+            <div class="usersname">
+                <div class="usersname-name">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname">
+                </div>
+                <div class="usersname-lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname">
+                </div>
+            </div>
+            <div class="mail">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="">
+            </div>
+            <div class="sex">
+                <label class="sex-item" for="male">
+                    <input type="radio" name="sex" id="male">
+                    <span class="custom-radio"></span>Male
+                </label>
+                <label class="sex-item" for="female">
+                    <input type="radio" name="sex" id="female">
+                    <span class="custom-radio"></span>Female
+                </label>
+            </div>
+            <div class="location">
+                <div class="location-country">
+                    <label for="counry">Country</label>
+                    <select class="select" name="country" id="country">
+                        <option value="" disabled selected hidden>Choose your country</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="portugal">Portugal</option>
+                    </select>
+                </div>           
+                <div class="location-city">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>   
+            </div>
+            <div class="button-left">
+                <button class="button button-long" type="submit">Sign Up</button>
+            </div>
+            <div class="text">
+                <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="" target="_blank">Terms of Use</a> and <a href="" target="_blank">Privacy Policy</a></p>
+            </div>
+            <div class="hr"></div>
+            <div class="lasttext">
+                <p>Have an account?</p><p><a href="">Log in</a></p>
+            </div>   
+        </form>
+        <form class="form right" action="">
+            <div class="tittle">
+                <h2>Profile</h2>
+            </div>
+            <div class="image">
+                <div class="image-load">
+                    <img src="./src/images/Image.png" alt="">
+                    <div class="image-input">
+                        <input type="image" name="downloadimage" alt="">
+                        <label for="downloadimage">Up to 1 MB (300x300 px)</label>
+                    </div>
+                </div>
+                <div>
+                    <button type="reset"></button>
+                </div>
+            </div>
+            <div class="usersname">
+                <div class="rname">
+                    <label for="rname">First Name</label>
+                    <input type="text" name="rname">
+                </div>
+                <div class="rmail">
+                    <label for="rmail">E-mail</label>
+                    <input type="email" name="rmail">
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-country">
+                    <label for="counry">Country</label>
+                    <select class="select" name="country" id="country">
+                        <option value="" disabled selected hidden>Choose your country</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="portugal">Portugal</option>
+                    </select>
+                </div>           
+                <div class="location-city">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+            </div>
+            <div class="number">
+                <div class="zip">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip">
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone">
+                </div>
+            </div>
+            <div class="button-right">
+                <button class="button button-short" type="submit">Update</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

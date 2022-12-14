@@ -7,13 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/style/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style/style1.css">
 </head>
 <body>
     <section class="forms">
         <form class="form left" >
             <div class="tittle">
-                <h2>Create an Account</h2>
+                <h2 class="tittle-h2">Create an Account</h2>
             </div>
             <div class="usersname">
                 <div class="usersname-name">
@@ -30,15 +31,20 @@
                 <input type="email" name="email" id="">
             </div>
             <div class="sex">
-                <input type="radio" name="sex" id="male">
-                <label for="male">Male</label>
-                <input type="radio" name="sex" id="female">
-                <label for="female">Female</label>
+                <label class="sex-item" for="male">
+                    <input type="radio" name="sex" id="male">
+                    <span class="custom-radio"></span>Male
+                </label>
+                <label class="sex-item" for="female">
+                    <input type="radio" name="sex" id="female">
+                    <span class="custom-radio"></span>Female
+                </label>
             </div>
             <div class="location">
                 <div class="location-country">
                     <label for="counry">Country</label>
-                    <select name="country" id="country">
+                    <select class="select" name="country" id="country">
+                        <option value="" disabled selected hidden>Choose your country</option>
                         <option value="ukraine">Ukraine</option>
                         <option value="portugal">Portugal</option>
                     </select>
@@ -51,9 +57,10 @@
             <div class="button-left">
                 <button class="button button-long" type="submit">Sign Up</button>
             </div>
-            <div class="hr"></div>
             <div class="text">
-                <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="" target="_blank">Terms of Use</a> and <a href="" target="_blank">Privacy Policy</a></p></div>
+                <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="" target="_blank">Terms of Use</a> and <a href="" target="_blank">Privacy Policy</a></p>
+            </div>
+            <div class="hr"></div>
             <div class="lasttext">
                 <p>Have an account?</p><p><a href="">Log in</a></p>
             </div>   
@@ -87,7 +94,8 @@
             <div class="location">
                 <div class="location-country">
                     <label for="counry">Country</label>
-                    <select name="country" id="country">
+                    <select class="select" name="country" id="country">
+                        <option value="" disabled selected hidden>Choose your country</option>
                         <option value="ukraine">Ukraine</option>
                         <option value="portugal">Portugal</option>
                     </select>
